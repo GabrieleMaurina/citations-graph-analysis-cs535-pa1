@@ -1,0 +1,88 @@
+22/02/12 18:49:57 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/02/12 18:49:58 INFO spark.SparkContext: Running Spark version 3.0.3
+22/02/12 18:49:58 INFO resource.ResourceUtils: ==============================================================
+22/02/12 18:49:58 INFO resource.ResourceUtils: Resources for spark.driver:
+
+22/02/12 18:49:58 INFO resource.ResourceUtils: ==============================================================
+22/02/12 18:49:58 INFO spark.SparkContext: Submitted application: PA1
+22/02/12 18:49:58 INFO spark.SparkContext: Spark configuration:
+spark.app.name=PA1
+spark.app.startTime=1644716998787
+spark.driver.memory=1g
+spark.eventLog.dir=hdfs://boston:30451/spark_log
+spark.eventLog.enabled=true
+spark.executor.extraJavaOptions=-XX:+PrintGCDetails -Dkey=value -Dnumbers="one two three"
+spark.kryoserializer.buffer.max=128m
+spark.logConf=true
+spark.master=local
+spark.rdd.compress=True
+spark.serializer=org.apache.spark.serializer.KryoSerializer
+spark.serializer.objectStreamReset=100
+spark.submit.deployMode=client
+spark.submit.pyFiles=
+22/02/12 18:49:58 INFO spark.SecurityManager: Changing view acls to: gmaurina
+22/02/12 18:49:58 INFO spark.SecurityManager: Changing modify acls to: gmaurina
+22/02/12 18:49:58 INFO spark.SecurityManager: Changing view acls groups to: 
+22/02/12 18:49:58 INFO spark.SecurityManager: Changing modify acls groups to: 
+22/02/12 18:49:58 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gmaurina); groups with view permissions: Set(); users  with modify permissions: Set(gmaurina); groups with modify permissions: Set()
+22/02/12 18:49:59 INFO util.Utils: Successfully started service 'sparkDriver' on port 43973.
+22/02/12 18:49:59 INFO spark.SparkEnv: Registering MapOutputTracker
+22/02/12 18:49:59 INFO spark.SparkEnv: Registering BlockManagerMaster
+22/02/12 18:49:59 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/02/12 18:49:59 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/02/12 18:49:59 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+22/02/12 18:49:59 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-57a3a235-2864-49e3-a300-569c51e4e6bd
+22/02/12 18:49:59 INFO memory.MemoryStore: MemoryStore started with capacity 366.3 MiB
+22/02/12 18:49:59 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+22/02/12 18:49:59 INFO util.log: Logging initialized @2855ms to org.sparkproject.jetty.util.log.Slf4jLog
+22/02/12 18:49:59 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_322-b06
+22/02/12 18:49:59 INFO server.Server: Started @2960ms
+22/02/12 18:49:59 INFO server.AbstractConnector: Started ServerConnector@399b396b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+22/02/12 18:49:59 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5790b1a2{/jobs,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6ed82216{/jobs/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@76f0dd02{/jobs/job,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a91efca{/jobs/job/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@308d31cc{/stages,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6a58f64b{/stages/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30923266{/stages/stage,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5cdf135e{/stages/stage/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4bd24166{/stages/pool,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6a354349{/stages/pool/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4488ed64{/storage,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6dbbfdbf{/storage/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@313a307e{/storage/rdd,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@863a010{/storage/rdd/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@ac6a385{/environment,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1a15e4cf{/environment/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@31c01428{/executors,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1607d49e{/executors/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@371b3d0{/executors/threadDump,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@32edaca{/executors/threadDump/json,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3357e7c2{/static,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@45bca30a{/,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e760c44{/api,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@692e8000{/jobs/job/kill,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4d999763{/stages/stage/kill,null,AVAILABLE,@Spark}
+22/02/12 18:49:59 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://albany.cs.colostate.edu:4040
+22/02/12 18:49:59 INFO executor.Executor: Starting executor ID driver on host albany.cs.colostate.edu
+22/02/12 18:49:59 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40709.
+22/02/12 18:49:59 INFO netty.NettyBlockTransferService: Server created on albany.cs.colostate.edu:40709
+22/02/12 18:49:59 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/02/12 18:49:59 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, albany.cs.colostate.edu, 40709, None)
+22/02/12 18:49:59 INFO storage.BlockManagerMasterEndpoint: Registering block manager albany.cs.colostate.edu:40709 with 366.3 MiB RAM, BlockManagerId(driver, albany.cs.colostate.edu, 40709, None)
+22/02/12 18:49:59 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, albany.cs.colostate.edu, 40709, None)
+22/02/12 18:49:59 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, albany.cs.colostate.edu, 40709, None)
+22/02/12 18:49:59 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a65952{/metrics/json,null,AVAILABLE,@Spark}
+22/02/12 18:50:00 INFO history.SingleEventLogFileWriter: Logging events to hdfs://boston:30451/spark_log/local-1644716999675.inprogress
+(1992, 850, 152, 3.707692307692308)
+(1993, 2826, 2858, 10.597941219722275)
+(1994, 5674, 11373, 8.14751662857603)
+(1995, 9047, 29801, 6.778762892798969)
+(1996, 12865, 58913, 6.153434246502975)
+(1997, 16985, 98289, 5.778385512949287)
+(1998, 21457, 142912, 5.617157037899535)
+(1999, 26211, 201275, 5.44843725269946)
+(2000, 31048, 265003, 5.302120048275838)
+(2001, 35237, 334015, 5.158534774311397)
+(2002, 35966, 347288, 5.1056528815691316)

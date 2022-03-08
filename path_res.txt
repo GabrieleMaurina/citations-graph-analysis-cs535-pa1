@@ -1,0 +1,342 @@
+22/02/13 12:21:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/02/13 12:21:38 INFO spark.SparkContext: Running Spark version 3.0.3
+22/02/13 12:21:38 INFO resource.ResourceUtils: ==============================================================
+22/02/13 12:21:38 INFO resource.ResourceUtils: Resources for spark.driver:
+
+22/02/13 12:21:38 INFO resource.ResourceUtils: ==============================================================
+22/02/13 12:21:38 INFO spark.SparkContext: Submitted application: PA1
+22/02/13 12:21:38 INFO spark.SparkContext: Spark configuration:
+spark.app.name=PA1
+spark.app.startTime=1644780098778
+spark.driver.memory=1g
+spark.eventLog.dir=hdfs://boston:30451/spark_log
+spark.eventLog.enabled=true
+spark.executor.extraJavaOptions=-XX:+PrintGCDetails -Dkey=value -Dnumbers="one two three"
+spark.kryoserializer.buffer.max=128m
+spark.logConf=true
+spark.master=local
+spark.rdd.compress=True
+spark.serializer=org.apache.spark.serializer.KryoSerializer
+spark.serializer.objectStreamReset=100
+spark.submit.deployMode=client
+spark.submit.pyFiles=
+22/02/13 12:21:38 INFO spark.SecurityManager: Changing view acls to: gmaurina
+22/02/13 12:21:38 INFO spark.SecurityManager: Changing modify acls to: gmaurina
+22/02/13 12:21:38 INFO spark.SecurityManager: Changing view acls groups to: 
+22/02/13 12:21:38 INFO spark.SecurityManager: Changing modify acls groups to: 
+22/02/13 12:21:38 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gmaurina); groups with view permissions: Set(); users  with modify permissions: Set(gmaurina); groups with modify permissions: Set()
+22/02/13 12:21:39 INFO util.Utils: Successfully started service 'sparkDriver' on port 33373.
+22/02/13 12:21:39 INFO spark.SparkEnv: Registering MapOutputTracker
+22/02/13 12:21:39 INFO spark.SparkEnv: Registering BlockManagerMaster
+22/02/13 12:21:39 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/02/13 12:21:39 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/02/13 12:21:39 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+22/02/13 12:21:39 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-e2059c91-b901-4615-b7ac-7f084182d293
+22/02/13 12:21:39 INFO memory.MemoryStore: MemoryStore started with capacity 366.3 MiB
+22/02/13 12:21:39 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+22/02/13 12:21:39 INFO util.log: Logging initialized @2950ms to org.sparkproject.jetty.util.log.Slf4jLog
+22/02/13 12:21:39 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_322-b06
+22/02/13 12:21:39 INFO server.Server: Started @3052ms
+22/02/13 12:21:39 INFO server.AbstractConnector: Started ServerConnector@399b396b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+22/02/13 12:21:39 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2ef180ea{/jobs,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@51efb706{/jobs/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c01bb26{/jobs/job,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@20568abd{/jobs/job/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@18f07773{/stages,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@47138093{/stages/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3fbc5ef{/stages/stage,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@326c19cf{/stages/stage/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@9104bc2{/stages/pool,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1faafb71{/stages/pool/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@468543b4{/storage,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@12f1125a{/storage/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@31f62b11{/storage/rdd,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@31850a4a{/storage/rdd/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7eb93897{/environment,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2930e3a4{/environment/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@59fdc4b6{/executors,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@348639b5{/executors/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@54aa97e4{/executors/threadDump,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65f1ae84{/executors/threadDump/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2fd13d18{/static,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5e1fd699{/,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@67915381{/api,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@388a7367{/jobs/job/kill,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@484d72b9{/stages/stage/kill,null,AVAILABLE,@Spark}
+22/02/13 12:21:39 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://albany.cs.colostate.edu:4040
+22/02/13 12:21:39 INFO executor.Executor: Starting executor ID driver on host albany.cs.colostate.edu
+22/02/13 12:21:39 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44155.
+22/02/13 12:21:39 INFO netty.NettyBlockTransferService: Server created on albany.cs.colostate.edu:44155
+22/02/13 12:21:39 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/02/13 12:21:39 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, albany.cs.colostate.edu, 44155, None)
+22/02/13 12:21:39 INFO storage.BlockManagerMasterEndpoint: Registering block manager albany.cs.colostate.edu:44155 with 366.3 MiB RAM, BlockManagerId(driver, albany.cs.colostate.edu, 44155, None)
+22/02/13 12:21:39 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, albany.cs.colostate.edu, 44155, None)
+22/02/13 12:21:39 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, albany.cs.colostate.edu, 44155, None)
+22/02/13 12:21:39 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7fabefa9{/metrics/json,null,AVAILABLE,@Spark}
+22/02/13 12:21:40 INFO history.SingleEventLogFileWriter: Logging events to hdfs://boston:30451/spark_log/local-1644780099657.inprogress
+3 217
+982
+4 137
+647
+5 104
+338
+6 29
+69
+7 4
+10
+8 1
+2
+22/02/13 13:09:43 ERROR util.Utils: Uncaught exception in thread executor-heartbeater
+java.lang.NullPointerException
+	at org.apache.spark.util.CollectionAccumulator.isZero(AccumulatorV2.scala:457)
+	at org.apache.spark.executor.Executor.$anonfun$reportHeartBeat$2(Executor.scala:919)
+	at org.apache.spark.executor.Executor.$anonfun$reportHeartBeat$2$adapted(Executor.scala:919)
+	at scala.collection.TraversableLike.$anonfun$filterImpl$1(TraversableLike.scala:256)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.filterImpl(TraversableLike.scala:255)
+	at scala.collection.TraversableLike.filterImpl$(TraversableLike.scala:249)
+	at scala.collection.AbstractTraversable.filterImpl(Traversable.scala:108)
+	at scala.collection.TraversableLike.filterNot(TraversableLike.scala:355)
+	at scala.collection.TraversableLike.filterNot$(TraversableLike.scala:355)
+	at scala.collection.AbstractTraversable.filterNot(Traversable.scala:108)
+	at org.apache.spark.executor.Executor.$anonfun$reportHeartBeat$1(Executor.scala:919)
+	at scala.collection.Iterator.foreach(Iterator.scala:941)
+	at scala.collection.Iterator.foreach$(Iterator.scala:941)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1429)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.executor.Executor.reportHeartBeat(Executor.scala:913)
+	at org.apache.spark.executor.Executor.$anonfun$heartbeater$1(Executor.scala:200)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1934)
+	at org.apache.spark.Heartbeater$$anon$1.run(Heartbeater.scala:46)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+1992,850,152,None
+3 13203
+190896
+4 29682
+406627
+5 59371
+684043
+6 89894
+971348
+7 114211
+1034609
+8 120914
+1020874
+9 120329
+922124
+22/02/13 16:42:22 ERROR executor.Executor: Exception in task 23291.0 in stage 658.0 (TID 259159)
+java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.DataOutputStream.writeLong(DataOutputStream.java:224)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$2(IndexShuffleBlockResolver.scala:191)
+	at scala.runtime.java8.JFunction1$mcVJ$sp.apply(JFunction1$mcVJ$sp.java:23)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofLong.foreach(ArrayOps.scala:258)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$1(IndexShuffleBlockResolver.scala:189)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:194)
+	at org.apache.spark.shuffle.sort.io.LocalDiskShuffleMapOutputWriter.commitAllPartitions(LocalDiskShuffleMapOutputWriter.java:117)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.mergeSpills(UnsafeShuffleWriter.java:270)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.closeAndWriteOutput(UnsafeShuffleWriter.java:224)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:463)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:466)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+	Suppressed: java.io.IOException: No space left on device
+		at java.io.FileOutputStream.writeBytes(Native Method)
+		at java.io.FileOutputStream.write(FileOutputStream.java:326)
+		at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+		at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+		at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+		at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+		at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$3(IndexShuffleBlockResolver.scala:194)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1386)
+		... 15 more
+		Suppressed: java.io.IOException: No space left on device
+			at java.io.FileOutputStream.writeBytes(Native Method)
+			at java.io.FileOutputStream.write(FileOutputStream.java:326)
+			at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+			at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:159)
+			... 17 more
+22/02/13 16:42:22 ERROR scheduler.TaskSetManager: Task 23291 in stage 658.0 failed 1 times; aborting job
+Traceback (most recent call last):
+  File "/s/chopin/a/grad/gmaurina/workspace/cs535/pa1/pa1.py", line 135, in <module>
+    main()
+  File "/s/chopin/a/grad/gmaurina/workspace/cs535/pa1/pa1.py", line 132, in main
+    data = tuple(compute_year(year, clean_citations, clean_published_dates) for year in range(1992, 2003))
+  File "/s/chopin/a/grad/gmaurina/workspace/cs535/pa1/pa1.py", line 132, in <genexpr>
+    data = tuple(compute_year(year, clean_citations, clean_published_dates) for year in range(1992, 2003))
+  File "/s/chopin/a/grad/gmaurina/workspace/cs535/pa1/pa1.py", line 119, in compute_year
+    diameter = get_diameter(nodes, edges, DIAMETER_THRESHOLD, CONNECTED_NODES[year]) if year < 1998 else 0
+  File "/s/chopin/a/grad/gmaurina/workspace/cs535/pa1/pa1.py", line 106, in get_diameter
+    last_covered = last_dist.count()
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1141, in count
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1132, in sum
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1003, in fold
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 889, in collect
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1304, in __call__
+  File "/s/chopin/a/grad/gmaurina/spark-3.0.3-bin-hadoop2.7/python/lib/py4j-0.10.9-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 23291 in stage 658.0 failed 1 times, most recent failure: Lost task 23291.0 in stage 658.0 (TID 259159, albany.cs.colostate.edu, executor driver): java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.DataOutputStream.writeLong(DataOutputStream.java:224)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$2(IndexShuffleBlockResolver.scala:191)
+	at scala.runtime.java8.JFunction1$mcVJ$sp.apply(JFunction1$mcVJ$sp.java:23)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofLong.foreach(ArrayOps.scala:258)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$1(IndexShuffleBlockResolver.scala:189)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:194)
+	at org.apache.spark.shuffle.sort.io.LocalDiskShuffleMapOutputWriter.commitAllPartitions(LocalDiskShuffleMapOutputWriter.java:117)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.mergeSpills(UnsafeShuffleWriter.java:270)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.closeAndWriteOutput(UnsafeShuffleWriter.java:224)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:463)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:466)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+	Suppressed: java.io.IOException: No space left on device
+		at java.io.FileOutputStream.writeBytes(Native Method)
+		at java.io.FileOutputStream.write(FileOutputStream.java:326)
+		at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+		at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+		at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+		at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+		at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$3(IndexShuffleBlockResolver.scala:194)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1386)
+		... 15 more
+		Suppressed: java.io.IOException: No space left on device
+			at java.io.FileOutputStream.writeBytes(Native Method)
+			at java.io.FileOutputStream.write(FileOutputStream.java:326)
+			at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+			at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:159)
+			... 17 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2059)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2008)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2007)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2007)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:973)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:973)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:973)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2239)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2188)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2177)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:775)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2114)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2135)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2154)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2179)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1004)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:388)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1003)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:168)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.DataOutputStream.writeLong(DataOutputStream.java:224)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$2(IndexShuffleBlockResolver.scala:191)
+	at scala.runtime.java8.JFunction1$mcVJ$sp.apply(JFunction1$mcVJ$sp.java:23)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofLong.foreach(ArrayOps.scala:258)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$1(IndexShuffleBlockResolver.scala:189)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:194)
+	at org.apache.spark.shuffle.sort.io.LocalDiskShuffleMapOutputWriter.commitAllPartitions(LocalDiskShuffleMapOutputWriter.java:117)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.mergeSpills(UnsafeShuffleWriter.java:270)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.closeAndWriteOutput(UnsafeShuffleWriter.java:224)
+	at org.apache.spark.shuffle.sort.UnsafeShuffleWriter.write(UnsafeShuffleWriter.java:180)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:463)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:466)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+	Suppressed: java.io.IOException: No space left on device
+		at java.io.FileOutputStream.writeBytes(Native Method)
+		at java.io.FileOutputStream.write(FileOutputStream.java:326)
+		at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+		at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+		at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+		at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+		at org.apache.spark.shuffle.IndexShuffleBlockResolver.$anonfun$writeIndexFileAndCommit$3(IndexShuffleBlockResolver.scala:194)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1386)
+		... 15 more
+		Suppressed: java.io.IOException: No space left on device
+			at java.io.FileOutputStream.writeBytes(Native Method)
+			at java.io.FileOutputStream.write(FileOutputStream.java:326)
+			at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+			at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:158)
+			at java.io.FilterOutputStream.close(FilterOutputStream.java:159)
+			... 17 more
+
